@@ -81,7 +81,7 @@ button {
   display: flex;
   align-items: center;
   border-radius: var(--size-button-border);
-  margin-bottom: var(--size-list-margin);
+  margin-bottom: calc(var(--size-list-margin));
 }
 .thumbnail-img {
   width: var(--size-button);
