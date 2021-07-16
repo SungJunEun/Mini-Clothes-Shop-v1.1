@@ -5,6 +5,12 @@
   --color-blue: #54aeef;
   --color-yellow: #ffd600; 
   --color-pink: #fd8085;
+  --color-background: #5f6569;
+  /* size */
+  --size-button: 40px;
+  --size-button-margin: 20px;
+  --size-button-padding: 5px;
+  --size-button-border: 5px;
 }
 * {
   font-family: 'Ubuntu', sans-serif;
@@ -14,9 +20,50 @@
 }
 
 body {
+  background-color: var(--color-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+
+.logo, .menu>button {
+  cursor: pointer;
+  transition: transform 300ms ease;
+}
+.logo:hover, .menu>button:hover {
+  transform: scale(1.1);
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu>button {
+  margin-right: var(--size-button-margin);
+}
+button {
+  outline:none;
+  border:none;
+  background-color: transparent;
+}
+
+.imgbtn {
+  width: var(--size-button);
+  height: var(--size-button);
+}
+
+.colorbtn {
+  padding: var(--size-button-padding);
+  border-radius: var(--size-button-border);
+}
+.blue {
+  background-color: var(--color-blue);
+}
+.yellow {
+  background-color: var(--color-yellow);
+}
+.pink {
+  background-color: var(--color-pink);
+}
+
