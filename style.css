@@ -8,9 +8,11 @@
   --color-background: #5f6569;
   /* size */
   --size-button: 40px;
-  --size-button-margin: 20px;
+  --size-button-margin: 30px;
   --size-button-padding: 5px;
   --size-button-border: 5px;
+  --size-list-margin: 10px;
+  --size-item-margin: 12px;
 }
 * {
   font-family: 'Ubuntu', sans-serif;
@@ -65,5 +67,25 @@ button {
 }
 .pink {
   background-color: var(--color-pink);
+}
+
+.items {
+  margin-top: var(--size-list-margin);
+  list-style: none;
+  width: 55%;
+  height: 60%;
+  overflow-y: scroll;
+}
+.item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  border-radius: var(--size-button-border);
+  margin-bottom: var(--size-list-margin);
+}
+.thumbnail-img {
+  width: var(--size-button);
+  height: var(--size-button);
+  margin: calc(var(--size-item-margin)/2) var(--size-item-margin);
 }
 
