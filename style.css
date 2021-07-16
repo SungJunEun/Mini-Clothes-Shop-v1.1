@@ -1,0 +1,14 @@
+:root {
+  /* color */
+  --color-black: black;
+  --color-white: white;
+  --color-blue: #54aeef;
+  --color-yellow: #ffd600; 
+  --color-pink: #fd8085;
+}
+* {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
