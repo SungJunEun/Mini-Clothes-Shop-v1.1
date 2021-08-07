@@ -23,8 +23,14 @@ function createHTMLstring(item) {
 function addEventItems(items) {
   const logo = document.querySelector('.logo');
   const menu = document.querySelector('.menu');
-  logo.addEventListener('click', ()=>displayItems(items));
-  menu.addEventListener('click', e => onButtonClick(e, items));
+  logo.addEventListener('click', logodisplay);
+  menu.addEventListener('click', menudisplay);
+  function logodisplay() {
+    displayItems(items);
+  }
+  function menudisplay(e) {
+    onButtonClick(e, items);
+  }
 }
 
 function onButtonClick(e, items) {
@@ -34,8 +40,6 @@ function onButtonClick(e, items) {
     return;
   }
   displayItems(items.filter(item => item[key] === value));
-
-  
 }
 
 loadItems()
